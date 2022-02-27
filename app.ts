@@ -166,6 +166,34 @@ class Emp {
     }
 }
 
-let obj = new Emp;
+class person extends Emp {
+    readonly d:string = 'Pk'
+    fun(): void {
+        super.fun()
+        console.log(this.d);
+    }
+}
+
+let obj = new person;
 // obj()
 obj.fun()
+
+interface obj {
+    name: string;
+    id: number
+}
+
+let ab: obj = {
+    name:'Pk',
+    id:3
+}
+
+class data implements obj {
+    name:string;
+    id: number;
+
+    constructor(name:string, id:number){
+        this.name = name;
+        this.id = id;
+    }
+}
