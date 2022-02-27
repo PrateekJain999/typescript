@@ -162,10 +162,10 @@ class Emp {
     }
 
     fun():void{
-        console.log(this.a,this.b);
+        console.log(this.a,this.b, this.c);
     }
 }
 
 let obj = new Emp;
-obj.Emp()
+// obj()
 obj.fun()
