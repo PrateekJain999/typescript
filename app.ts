@@ -158,13 +158,11 @@ class Emp {
     public b:number = 4;
     protected c:number = 4;
     
-    Emp(){
-        this.a = 5;
-        this.b=5;
+    constructor(){
     }
 
     fun():void{
-        console.log(a,b);
+        console.log(this.a,this.b);
     }
 }
 
